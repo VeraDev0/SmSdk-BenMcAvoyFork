@@ -1,16 +1,23 @@
 #pragma once
 
-#include "SteamNetworkSend.hpp"
-#include "NetworkClient.hpp"
+#include "SmSdk/Network/SteamNetworkSend.hpp"
+#include "SmSdk/Network/NetworkClient.hpp"
 
 struct SteamNetworkClient : public NetworkClient
 {
+private:
 	/* 0x0130 */ char pad_0x130[0x8];
-	/* 0x0138 */ __int64 host_steam_id;
+public:
+	/* 0x0138 */ int64_t m_iHostSteamId;
+private:
 	/* 0x0140 */ char pad_0x140[0x78];
-	/* 0x01B8 */ HSteamNetConnection host_connection;
+public:
+	/* 0x01B8 */ HSteamNetConnection m_hostConnection;
+private:
 	/* 0x01BC */ char pad_0x1BC[0x2C];
-	/* 0x01E8 */ std::string passphrase;
+public:
+	/* 0x01E8 */ std::string m_passphrase;
+private:
 	/* 0x0208 */ char pad_0x208[0x28];
 }; // Size: 0x230
 

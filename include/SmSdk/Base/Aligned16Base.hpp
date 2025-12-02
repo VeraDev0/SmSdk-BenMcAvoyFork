@@ -5,7 +5,6 @@
 
 __declspec(align(16)) class Aligned16Base
 {
-public:
 };
 
 #pragma warning(pop)

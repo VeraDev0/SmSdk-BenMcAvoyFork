@@ -9,7 +9,6 @@ public:
 	OptionsItemBase() : m_pBaseWidget(nullptr) {}
 
 	virtual void update() = 0;
-
 public:
 	/* 0x0008 */ MyGUI::Widget* m_pBaseWidget;
 }; // Size: 0x10

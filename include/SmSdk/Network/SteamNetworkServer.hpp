@@ -1,9 +1,10 @@
 #pragma once
 
-#include "NetworkServer.hpp"
+#include "SmSdk/Network/NetworkServer.hpp"
 
 struct SteamNetworkServer : public NetworkServer
 {
+private:
 	/* 0x0030 */ char pad_0x30[0xF8];
 }; // Size: 0x128
 

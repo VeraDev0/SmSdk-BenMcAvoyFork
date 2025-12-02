@@ -1,6 +1,6 @@
 #pragma once
 
-#include "OptionsSubMenuBase.hpp"
+#include "SmSdk/Gui/OptionsSubMenuBase.hpp"
 
 #include "SmSdk/Util/Memory.hpp"
 #include "SmSdk/offsets.hpp"
@@ -16,7 +16,6 @@ public:
 
 	virtual ~ControlOptionsMenu() = default;
 	void restoreDefaults() override { /* implemented by the game */ }
-
 private:
 	/* 0x0168 */ char pad_0x168[0x20];
 }; // Size: 0x188

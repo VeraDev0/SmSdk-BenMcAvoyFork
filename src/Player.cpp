@@ -4,7 +4,7 @@
 
 Character* Player::getCharacter() const
 {
-	return CharacterManager::GetCharacter(this->character_id);
+	return CharacterManager::GetCharacter(this->m_iCharacterId);
 }
 
 bool Player::characterExists() const

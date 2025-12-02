@@ -8,7 +8,7 @@ struct JointPhysicsProxy : public PhysicsProxy
 private:
 	/* 0x0030 */ char pad_0x30[0x8];
 public:
-	/* 0x0038 */ btHingeConstraint* hinge_constraint;
+	/* 0x0038 */ btHingeConstraint* m_pHingeConstraint;
 }; // Size: 0x40
 
 static_assert(sizeof(JointPhysicsProxy) == 0x40, "JointPhysicsProxy: Incorrect Size");

@@ -10,10 +10,9 @@ class CompoundButton
 public:
 	CompoundButton(MyGUI::Widget* parent)
 	{
-		using fSelfConstructor = void(*)(CompoundButton*, MyGUI::Widget*);
+		using fSelfConstructor = void (*)(CompoundButton*, MyGUI::Widget*);
 		Memory::Read<fSelfConstructor>(SM_CONSTRUCTOR_COMPOUND_BUTTON_OFFSET)(this, parent);
 	}
-
 public:
 	/* 0x0000 */ MyGUI::Widget* m_pBaseWidget;
 	/* 0x0008 */ MyGUI::Button* m_pButton;
