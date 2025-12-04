@@ -7,6 +7,8 @@
 #include <vector>
 #include <memory>
 
+SMSDK_BEGIN_NAMESPACE
+
 struct PathNode : public NetObj
 {
 private:
