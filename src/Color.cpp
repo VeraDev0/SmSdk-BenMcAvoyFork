@@ -37,14 +37,14 @@ Color::Color(uint64_t col)
 Color::Color(ColorBGRA col)
     : r(col.r), g(col.g), b(col.b), a(col.a) {}
 
-float Color::getFloat(size_t idx)
+float Color::getFloat(size_t iIdx)
 {
-	return float(this->colArr[idx]) * (1.0f / 255.0f);
+	return float(this->colArr[iIdx]) * (1.0f / 255.0f);
 }
 
-void Color::setFloat(size_t idx, float val)
+void Color::setFloat(size_t iIdx, float fVal)
 {
-	this->colArr[idx] = uint8_t(val * 255.0f);
+	this->colArr[iIdx] = uint8_t(fVal * 255.0f);
 }
 
 
